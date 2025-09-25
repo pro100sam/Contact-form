@@ -1,0 +1,201 @@
+@font-face {
+  font-family: Karla-Bold;
+  src: url(fonts/static/Karla-Bold.ttf);
+}
+
+@font-face {
+  font-family: Karla-Regular;
+  src: url(fonts/static/Karla-Regular.ttf);
+}
+
+body {
+  background-color: #e0f1e8;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 656px;
+  height: 733px;
+  margin: 128px auto;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.master > .title {
+  font-family: Karla-Bold;
+  font-size: 32px;
+  letter-spacing: -1px;
+  color: #2a4144;
+}
+
+.master__title {
+  margin: 0px 0px 32px 0px;
+}
+
+input {
+  color: #86a2a5;
+  border: 1px solid #86a2a5;
+  cursor: pointer;
+  padding: 0;
+}
+
+.main__name,
+.main__email,
+.main__queryType {
+  margin: 0px 0px 24px 0px;
+}
+
+.name {
+  height: 83px;
+  display: flex;
+}
+
+label {
+  font-family: Karla-Regular;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2a4144;
+  width: 100%;
+  cursor: pointer;
+}
+
+.name input {
+  height: 51px;
+  display: block;
+  margin: 8px 0px 0px 0px;
+  border-radius: 8px;
+}
+
+.name__firstName {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px 0px 0px;
+}
+
+.lastName {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#emailAddress {
+  display: block;
+  width: 100%;
+  height: 51px;
+  margin: 8px 0px 0px 0px;
+  border-radius: 8px;
+}
+
+.options {
+  display: flex;
+}
+
+.generalEnquiry label,
+.supportRequest label {
+  font-size: 18px;
+}
+
+.generalEnquiry,
+.supportRequest {
+  width: 50%;
+  height: 51px;
+  border-radius: 8px;
+  border: 1px solid #86a2a5;
+  display: flex;
+  accent-color: #0c7d69;
+}
+
+.supportRequest label,
+.generalEnquiry label,
+.content > input,
+.lastName input,
+.firstName input {
+  cursor: pointer;
+}
+
+.generalEnquiry input,
+.supportRequest input {
+  width: 20px;
+  height: 20px;
+
+  margin: 0px 14px 0px 20px;
+}
+
+.generalEnquiry label,
+.supportRequest label {
+  height: 51px;
+  display: flex;
+  align-items: center;
+}
+
+.supportRequest label:checked {
+  background-color: #0c7d69;
+}
+
+.queryType__generalEnquiry {
+  margin: 0px 16px 0px 0px;
+}
+
+.queryType__title {
+  margin: 0px 0px 16px 0px;
+  font-family: Karla-Regular;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2a4144;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 105px;
+  border-radius: 8px;
+  border: 1px solid #86a2a5;
+  margin: 8px 0px 0px 0px;
+  resize: none;
+  cursor: pointer;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+}
+
+.content__consent {
+  margin: 40px 0px 40px 0px;
+}
+
+.consent input {
+  margin: 0px 16px 0px 0px;
+  width: 18px;
+  height: 18px;
+  accent-color: #0c7d69;
+}
+
+.content > input {
+  font-family: Karla-Bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(255, 255, 255);
+  background-color: #0c7d69;
+  height: 59px;
+  border-radius: 16px;
+}
+
+.content > input:hover {
+  background-color: color-mix(in srgb, #0c7d69 66%, black 34%);
+}
+
+#firstName:hover,
+#lastName:hover,
+#emailAddress:hover,
+.generalEnquiry:hover,
+.supportRequest:hover,
+textarea:hover {
+  border: 1px solid #0c7d69;
+}
