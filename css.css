@@ -16,11 +16,59 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 656px;
+  max-width: 656px;
   height: 733px;
   margin: 128px auto;
   padding: 40px;
   border-radius: 16px;
+}
+
+@media (max-width: 656px) {
+  .content {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 510px) {
+  .content {
+    max-width: 321px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    max-width: none;
+    margin: 0;
+    height: 100%;
+  }
+
+  .name {
+    flex-direction: column;
+  }
+  .name__firstName > * {
+    width: 200%;
+  }
+
+  .lastName > * {
+    width: 200%;
+  }
+  .main__email {
+    margin: 0;
+    margin: 140px 0px 0px 0px !important;
+  }
+  .options {
+    flex-direction: column;
+  }
+
+  .generalEnquiry,
+  .supportRequest {
+    width: 100% !important;
+  }
+
+  .generalEnquiry,
+  .supportRequest {
+    display: block !important;
+  }
 }
 
 .master > .title {
@@ -41,10 +89,10 @@ input {
   padding: 0;
 }
 
-.main__name,
-.main__email,
-.main__queryType {
-  margin: 0px 0px 24px 0px;
+.name,
+.main__queryType,
+.main__email {
+  margin: 24px 0px 24px 0px;
 }
 
 .name {
@@ -118,7 +166,6 @@ label {
 
 .generalEnquiry input,
 .supportRequest input {
-  width: 20px;
   height: 20px;
 
   margin: 0px 14px 0px 20px;
@@ -172,7 +219,6 @@ textarea {
 
 .consent input {
   margin: 0px 16px 0px 0px;
-  width: 18px;
   height: 18px;
   accent-color: #0c7d69;
 }
